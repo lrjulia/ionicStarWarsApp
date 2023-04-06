@@ -9,5 +9,12 @@ import { IonicModule } from '@ionic/angular';
   imports: [IonicModule],
 })
 export class HomePage {
+
+  message: string = 'The force is with me!';
+
   constructor() {}
+
+  morePower() {
+    this.message = 'Now the force is even stronger!';
+  }
 }
